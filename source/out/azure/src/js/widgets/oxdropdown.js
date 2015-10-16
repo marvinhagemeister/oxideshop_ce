@@ -28,7 +28,7 @@
             sDisabledClass      : 'js-disabled'
         },
 
-         _create: function(){
+        _create: function(){
 
             var self = this,
                 options = self.options;

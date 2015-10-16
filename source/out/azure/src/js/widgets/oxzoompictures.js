@@ -41,10 +41,10 @@
                 return false;
             });
 
-             // adding click event for zoom button
-             $(options.sZoomTriggerButtonId).click(function() {
-                 self._beforeShow();
-             } );
+            // adding click event for zoom button
+            $(options.sZoomTriggerButtonId).click(function() {
+               self._beforeShow();
+            } );
 
         },
 

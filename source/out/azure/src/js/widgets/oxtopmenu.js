@@ -44,9 +44,9 @@
                 extraWidth:  1     // extra width can ensure lines don't sometimes turn over
                                    // due to slight rounding differences and font-family
             }).superfish( {
-                 delay : 500,
-                 dropShadows : false,
-                 onBeforeShow : function() {
+                delay : 500,
+                dropShadows : false,
+                onBeforeShow : function() {
                     //adding hover class for active <A> elements
                     $('a:first', this.parent()).addClass($.fn.superfish.op.hoverClass);
 

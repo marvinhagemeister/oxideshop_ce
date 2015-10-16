@@ -20,7 +20,7 @@
  */
 ( function( $ ) {
 
-   oxCountryStateSelect = {
+    oxCountryStateSelect = {
         options: {
             listItem        : "li",
             select          : "select",
@@ -55,19 +55,19 @@
          */
         manageStateSelect: function(oSelect, aStates, aStatesValues, selectedStateId)
         {
-             this.removeSelectOptions(oSelect);
+            this.removeSelectOptions(oSelect);
 
-             var stateSelectSpan = this.getStateSelectSpan(oSelect);
+            var stateSelectSpan = this.getStateSelectSpan(oSelect);
 
-             if (aStates != null && aStates.length > 0) {
-                 this.addSelectOptions(oSelect, aStatesValues, aStates, selectedStateId);
-                 stateSelectSpan.parent().show();
-             } else {
-                 stateSelectSpan.parent().hide();
-                 this.removeSelectOptions(oSelect);
-             }
+            if (aStates != null && aStates.length > 0) {
+                this.addSelectOptions(oSelect, aStatesValues, aStates, selectedStateId);
+                stateSelectSpan.parent().show();
+            } else {
+                stateSelectSpan.parent().hide();
+                this.removeSelectOptions(oSelect);
+            }
 
-             return oSelect;
+            return oSelect;
         },
 
         /**

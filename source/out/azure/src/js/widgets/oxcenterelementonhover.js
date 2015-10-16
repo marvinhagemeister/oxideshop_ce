@@ -27,16 +27,16 @@
             var self = this;
             var el   = self.element;
 
-             el.hover(function(){
-                  var targetObj = $(".viewAllHover", el);
-                  var targetObjWidth = targetObj.outerWidth() / 2;
-                  var parentObjWidth = el.width() / 2;
+            el.hover(function(){
+                var targetObj = $(".viewAllHover", el);
+                var targetObjWidth = targetObj.outerWidth() / 2;
+                var parentObjWidth = el.width() / 2;
 
-                  targetObj.css("left", parentObjWidth - targetObjWidth + "px");
-                  targetObj.show();
-              }, function(){
-                  $(".viewAllHover", el).hide();
-              });
+                targetObj.css("left", parentObjWidth - targetObjWidth + "px");
+                targetObj.show();
+            }, function(){
+                $(".viewAllHover", el).hide();
+            });
         }
     };
 

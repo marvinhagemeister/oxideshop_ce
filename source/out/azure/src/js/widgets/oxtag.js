@@ -22,7 +22,7 @@
 
     oxTag = {
 
-         highTag : function() {
+        highTag : function() {
 
             var oSelf = $(this);
 

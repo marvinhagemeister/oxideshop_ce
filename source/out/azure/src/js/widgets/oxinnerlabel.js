@@ -23,8 +23,8 @@
     oxInnerLabel = {
 
         options: {
-                sDefaultValue  : 'innerLabel',
-                sReloadElement : ''
+            sDefaultValue  : 'innerLabel',
+            sReloadElement : ''
         },
 
         _create: function(){
@@ -58,12 +58,12 @@
             $(options.sReloadElement).click(function() {
                 setTimeout(function(){ self._reload( self.element, label ); }, 100);
             });
-       },
+        },
        
-       _reload : function( input, label ){
-           var pos = input.position();
-           label.css( { "left": (pos.left) + "px", "top":(pos.top) + "px" } );
-       }
+        _reload : function( input, label ){
+            var pos = input.position();
+            label.css( { "left": (pos.left) + "px", "top":(pos.top) + "px" } );
+        }
     };
 
     $.widget( "ui.oxInnerLabel", oxInnerLabel );

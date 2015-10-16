@@ -28,14 +28,13 @@
                 options = self.options,
                 el      = self.element;
 
-             el.closest('form').submit(function() {
+            el.closest('form').submit(function() {
                 if( el.prop('checked') ){
                     return true;
                 } else {
                     $("p[name='agbError']").show();
                     return false;
                 }
-
             });
 
             el.click(function() {

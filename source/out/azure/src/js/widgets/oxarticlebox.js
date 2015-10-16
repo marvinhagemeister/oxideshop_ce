@@ -61,7 +61,7 @@
                 if (iTitleWidth > iContWidth) {
 
                     // checking if title has numbers at the end
-                    var sTitleEnd	    = $.trim(sEndPattern.exec(sTitleText));
+                    var sTitleEnd = $.trim(sEndPattern.exec(sTitleText));
 
                     // seperating the title from the numbers
                     if (sTitleEnd) {
